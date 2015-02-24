@@ -20,8 +20,7 @@ The purpose of the website is to create awareness with specific examples of sexu
 3. Workshops (sororities, fraternities, activist groups)
 4. University President
 5. Professors (that teach classes where this issue might be discussed)
-####Target: 
-UM Student Population
+6 Target: UM Student Population
 
 ###Timeline:
  Date | What happen? 
@@ -35,3 +34,12 @@ UM Student Population
 | 4/2/15 | Getting feedback on site|
 | 4/9/15 | - Aim to finish code -Have a launch date planned and determine logistics |
 | 4/16/15| TBD |
+
+###Tech. Details:
+####Languages:
+1. HTML
+2. CSS
+3. Javascrip
+
+####Libraries:
+1. JQuery
