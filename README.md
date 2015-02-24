@@ -20,7 +20,7 @@ The purpose of the website is to create awareness with specific examples of sexu
 3. Workshops (sororities, fraternities, activist groups)
 4. University President
 5. Professors (that teach classes where this issue might be discussed)
-#### Target: 
+####Target: 
 UM Student Population
 
 ###Timeline:
