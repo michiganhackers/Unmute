@@ -1,2 +1,6 @@
 # Hide the virtualenv
 env
+
+# No .pyc
+*.pyc
+*.pyo
