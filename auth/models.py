@@ -15,5 +15,3 @@ class User(UserMixin, db.Model):
 
     def __repr__(self):
         return '<nickName = {nickName}, email = {email}'.format(nickName = self.nickName, email = self.nickName)
-
-
