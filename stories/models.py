@@ -10,9 +10,9 @@ class Stories(db.Model):
     __tablename__ = 'stories'
     id = db.Column(db.Integer, primary_key = True)
         # story's ID
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    # user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
         # author's ID
-    user = db.relationship('User', backref = db.backref('stories', lazy = 'dynamic'))
+    # user = db.relationship('User', backref = db.backref('stories', lazy = 'dynamic'))
         # connecting authors to their stories
 
     # specific post information
@@ -30,14 +30,15 @@ class Stories(db.Model):
     post_date = db.Column(db.DateTime)
 
     # fields for the updated
-    story_id = db.Column(db.Integer, db.ForeignKey('story.id'), nullable = True)
-    story = db.relationship('Story', backref = db.backref('stories', lazy = 'dynamic'))
+    # story_id = db.Column(db.Integer, db.ForeignKey('story.id'), nullable = True)
+    # story = db.relationship('Story', backref = db.backref('stories', lazy = 'dynamic'))
 
-    def __init__(self, user_id, title, story_body, color):
-        self.user_id = user_id
+    def __init__(self, title, story_body, color):
+        # self.user_id = user_id
         self.title = title
         self.story_body = story_body
         self.color = color
+        # TO DO
         self.post_date =
 
 
@@ -51,5 +52,6 @@ class Interact(db.model):
     # ie. starring a post to read later
     # the class name might be a little bit misleading
     __tablename__ = 'interact'
-    id = story_id
-        # the id of the post that you "like"
+    id = db.Column(db.Integer, primary_key = True)
+        # the id of the interaction
+
