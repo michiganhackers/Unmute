@@ -40,4 +40,3 @@ class Story(db.Model):
         self.story_body = story_body
         self.color = color
         self.post_date = arrow.utcnow()
-
