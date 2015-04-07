@@ -50,10 +50,10 @@ class Stories(db.Model):
 #     id = db.Column(db.Integer, primary_key = True)
 
 
-class Interact(db.model):
-    # this is for the interactions between the posts
-    # ie. starring a post to read later
-    # the class name might be a little bit misleading
-    __tablename__ = 'interact'
-    id = db.Column(db.Integer, primary_key = True)
-        # the id of the interaction
+# class Interact(db.model):
+#     # this is for the interactions between the posts
+#     # ie. starring a post to read later
+#     # the class name might be a little bit misleading
+#     __tablename__ = 'interact'
+#     id = db.Column(db.Integer, primary_key = True)
+#         # the id of the interaction
