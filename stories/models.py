@@ -1,13 +1,17 @@
 from flask.ext.sqlalchemy import SQLAlchemy
-from flask.ext.login import UserMixin
+#from flask.ext.login import UserMixin
+
+from sqlalchemy_utils import ArrowType
 
 from app import db
-from app.auth.models import User
+
+from util import create_named_tuple
+#from app.auth.models import User
 from datetime import datetime
 import arrow
-class Stories(db.Model):
 
-    __tablename__ = 'stories'
+class Story(db.Model):
+
     id = db.Column(db.Integer, primary_key = True)
         # story's ID
     # user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
@@ -16,44 +20,24 @@ class Stories(db.Model):
         # connecting authors to their stories
 
     # specific post information
-    title = db.Column(db.String(80))
-        # number is size of the string
-    story_body = db.Column(db.Text)
-    color = db.Column(db.String(20))
-        # color to classify story
+    title = db.Column(db.String(128))
+    # number is size of the string
+    story_body = db.Column(db.String(2048))
 
+    ColorEnum = create_named_tuple('red', 'pink', 'purple', 'deep_purple', 'indigo', 'blue',
+            'light_blue', 'cyan', 'teal', 'green', 'light_green', 'lime', 'yellow', 'amber',
+            'orange', 'deep_orange', 'brown', 'grey', 'blue_grey')
 
-    # tags
-    # tag_id = db.Column(db.Integer, db.ForeignKey('tag.id'), nullable = True)
-    # tag = db.relationship('Tag', backref = db.backref('stories', lazy = 'dynamic'))
+    color = db.Column(db.Enum(*ColorEnum._asdict().values()), nullable=False, default=ColorEnum.blue)
+    # color to classify story
 
-    # dateTime
-    post_date = db.Column(db.DateTime)
-
-    # fields for the updated
-    story_id = db.Column(db.Integer, db.ForeignKey('story.id'), nullable = True)
-
-    story = db.relationship('Stories', backref = db.backref('stories', lazy = 'dynamic'), uselist=False)
+    # post time
+    post_date = db.Column(ArrowType(), nullable=False)
 
     def __init__(self, title, story_body, color):
         # self.user_id = user_id
         self.title = title
         self.story_body = story_body
         self.color = color
-        now = arrow.utcnow()
-        self.post_date = now.date()
-        self.story_id = story_id
+        self.post_date = arrow.utcnow()
 
-
-# class Tag(db.model):
-#     __tablename__ = 'tags'
-#     id = db.Column(db.Integer, primary_key = True)
-
-
-class Interact(db.model):
-    # this is for the interactions between the posts
-    # ie. starring a post to read later
-    # the class name might be a little bit misleading
-    __tablename__ = 'interact'
-    id = db.Column(db.Integer, primary_key = True)
-        # the id of the interaction

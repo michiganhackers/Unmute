@@ -1,6 +1,10 @@
 # Hide the virtualenv
 env
 venv/
+
 # No .pyc
 *.pyc
 *.pyo
+
+# No sqlite junk
+*.db
