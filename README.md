@@ -3,7 +3,7 @@
 *This project is under construction.*
 
 This project is dedicated to providing University of Michigan students a safe
-space to voice their concerns about campus, local, or global affiars
+space to voice their concerns about campus, local, or global affairs
 anonymously. Our network has a more serious tone than other similar anonymous
 sharing networks and is available to everyone on campus. 
 
