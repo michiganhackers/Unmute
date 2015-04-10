@@ -36,6 +36,8 @@ app.json_encoder = ArrowJSONEncoder
 
 # Import all modules
 import stories
+import pages
 
 # Register all blueprints
 app.register_blueprint(stories.blueprint)
+app.register_blueprint(pages.blueprint)
