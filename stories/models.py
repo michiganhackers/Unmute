@@ -11,6 +11,7 @@ from datetime import datetime
 import arrow
 
 class Story(db.Model):
+    __tablename__ = 'stories'
 
     id = db.Column(db.Integer, primary_key = True)
         # story's ID
