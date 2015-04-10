@@ -39,3 +39,4 @@ class Story(db.Model):
         now = arrow.utcnow()
         self.post_date = now.date()
         self.story_id = story_id
+
