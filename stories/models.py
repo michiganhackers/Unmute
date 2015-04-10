@@ -35,10 +35,12 @@ class Story(db.Model):
     latitude = db.Column(db.Float())
     longitude = db.Column(db.Float())
 
-    def __init__(self, title, story_body, color):
+    def __init__(self, title, story_body, color, latitude, longitude):
         # self.user_id = user_id
         self.title = title
         self.story_body = story_body
         self.color = color
+        self.latitude = latitude
+        self.longitude = longitude
         now = arrow.utcnow()
         self.post_date = now.date()
