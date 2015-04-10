@@ -1,22 +1,10 @@
 /***********************
-		HEADING
-***********************/
-a {
-	text-decoration: none;
-	font-family: 'Roboto Slab', sans-serif;
-}
-
-img {
-	max-width: 100%;
-}
-
-/***********************
-		HEADING
+		  HEADING
 ***********************/
 header {
-  float: left;
   padding: 5px 0 0 5px;
   width: 100%;
+  height: 25%
 }
 
 h1 {
@@ -25,10 +13,14 @@ h1 {
   font-size: 50px;
 }
 
+a {
+	text-decoration: none;
+	font-family: "Ubuntu", sans-serif;
+}
 
 
 /***********************
-		NAVIGATION
+		  NAVIGATION
 ***********************/
 nav {
   text-align: right;
@@ -67,17 +59,18 @@ nav a.selected, nav a:hover {
 /***********************
 		 BODY
 ***********************/
-header, footer {
-	background-color: #030615;
-	color: #B8B3AD;
-	margin: 0;
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #030615;
+  width: 99%;
 }
 
-body {
-	padding: 0;
+header, footer {
+	background-color: #607d8b ;
+	color: #B8B3AD;
 	margin: 0;
-	background-color: #030615;
-  width: 99%;
+  width: 100%;
 }
 
 .map {
@@ -89,18 +82,19 @@ body {
 }
 
 
-
 /***********************
-		FOOTER
+		  FOOTER
 ***********************/
 footer {
   font-size: 1em;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
-  margin: 5px;
+  padding: 5px 0 0 5px;
   padding-top: 10px;
   color: #B8B3AD;
   clear: left;
+  width: 100%;
+  height: 25%;
 }
 
 footer p {
