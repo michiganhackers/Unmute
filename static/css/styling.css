@@ -6,6 +6,7 @@
 
 .unmutelogo {
 	height: 100px;
+	text-align: left;
 }
 
 a {
@@ -44,6 +45,7 @@ p {
 	margin: 0 10px 10px 0;
 	display: inline-block;
 	text-decoration: none;
+	text-align: right;
 }
 
 body {
