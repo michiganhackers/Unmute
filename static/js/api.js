@@ -40,4 +40,4 @@
     API.delete = function(id, callback) {
         doXHR("DELETE", "/api/stories/" + id, null, callback);
     };
-}(this));
+}(window));

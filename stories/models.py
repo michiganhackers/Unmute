@@ -42,5 +42,4 @@ class Story(db.Model):
         self.color = color
         self.latitude = latitude
         self.longitude = longitude
-        now = arrow.utcnow()
-        self.post_date = now.date()
+        self.post_date = arrow.utcnow()
