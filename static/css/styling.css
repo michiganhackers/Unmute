@@ -5,7 +5,7 @@
 }
 
 .unmutelogo {
-	height: 100px;
+	height: 75px;
 	float: left;
 }
 
@@ -22,7 +22,6 @@ p {
 
 #header-nav {
 	margin: 5px 0;
-	text-align: right;
 }
 
 #header-nav ul {
@@ -45,6 +44,7 @@ p {
 	margin: 0 10px 10px 0;
 	display: inline-block;
 	text-decoration: none;
+	float: right;
 }
 
 body {
