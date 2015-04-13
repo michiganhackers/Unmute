@@ -22,7 +22,13 @@
                 for (var i = 0, len = stories.objects.length; i < len; i++) {
                     var story = stories.objects[i];
                     if (storiesAdded.indexOf(story.id) < 0) {
-                        var marker = L.marker([story.latitude, story.longitude]).addTo(map);
+                        var icon = L.icon({
+                            iconUrl: '/static/images/pin.png',
+                            iconSize: [28, 28],
+                            iconAnchor: [27, 27],
+                            popupAnchor: [-14, -14]
+                        });
+                        var marker = L.marker([story.latitude, story.longitude], {icon: icon}).addTo(map);
                         marker.bindPopup("<b>" + story.title + "</b><br>" + story.story_body);
                         storiesAdded.push(story.id);
                         numStoriesAdded++;
