@@ -1,119 +1,64 @@
-/***********************
-		HEADING
-***********************/
+#header {
+	height: 20%;
+	padding: 5px 0 5px 0;
+	text-align: center;
+}
+
+.unmutelogo {
+	height: 100px;
+}
+
 a {
 	text-decoration: none;
-	font-family: 'Roboto Slab', sans-serif;
+	font-family: "Ubuntu", sans-serif;
+	color: white;
 }
 
-img {
-	max-width: 100%;
+p {
+	font-family: "Ubuntu", sans-serif;
+	color: white;
 }
 
-/***********************
-		HEADING
-***********************/
-header {
-  float: left;
-  padding: 5px 0 0 5px;
-  width: 100%;
+#header-nav {
+	margin: 5px 0;
+	text-align: center;
 }
 
-h1 {
-  text-align: center;
-  color: #800000;
-  font-size: 50px;
-}
-
-
-
-/***********************
-		NAVIGATION
-***********************/
-nav {
-  text-align: right;
-  margin: 5px 0;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  text-decoration: none;
-  margin: 0 10px 10px 0;
-}
-
-nav a, nav a:visited {
-  color:#B8B3AD;
-}
-
-nav a.selected, nav a:hover {
-  color: #800000;
-}
-
-#home {
-	text-align: left;
-}
-
-#MHlogo.selected, #MHlogo:hover {
-  color: white;
-}
-
-
-/***********************
-		 BODY
-***********************/
-header, footer {
-	background-color: #030615;
-	color: #B8B3AD;
-	margin: 0;
-}
-body {
+#header-nav ul {
+	margin: 0 10px;
 	padding: 0;
-	margin: 0;
-	background-color: #030615;
+	list-style: none;
 }
-.map {
-	position: relative;
+
+#header-nav li {
+	margin: 0 10px 10px 0;
+	display: inline-block;
+	text-decoration: none;
+}
+
+body {
+	background: #607d8b;
+}
+
+#map {
+	text-align: center;
+}
+
+#footer {
+	height: 25%;
 	width: 100%;
-	height: 100%;
-	min-height: 500px;
-	float: left;
+	padding: 5px 0 5px 0;
+	padding-top: 10px;
+	font-size: 1em;
+	text-align: center;
+	clear: left;
 }
 
-
-
-/***********************
-		FOOTER
-***********************/
-footer {
-  font-size: 1em;
-  font-family: 'Roboto Slab', sans-serif;
-  text-align: center;
-  margin: 5px;
-  padding-top: 10px;
-  color: #B8B3AD;
-  clear: left;
-}
-
-footer p {
-	color: #B8B3AD;
-}
-
-#MHlogo {
-  height: 40px;
-  width: 200px;
-  margin-top: -20px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-.ol-map {
-    height: 400px;
-    width: 100%;
+.MHlogo {
+	height: 40px;
+	width: 200px;
+	margin-top: -20px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
 }
