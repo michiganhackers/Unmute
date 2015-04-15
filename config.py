@@ -1,6 +1,6 @@
 class Config(object):
     DEBUG = False
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://@localhost/unmute-db'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://unmute:unmute@localhost/unmute-db'
 
 class ProductionConfig(Config):
     pass
