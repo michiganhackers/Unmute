@@ -2,21 +2,12 @@ from flask import Flask
 from flask.json import JSONEncoder
 from flask_login import LoginManager
 from flask.ext.sqlalchemy import SQLAlchemy
-import sys
 import arrow
 
-if len(sys.argv) > 1:
-    if sys.argv[1] == 'dev':
-        config = 'config.DevelopmentConfig'
-    if sys.argv[1] == 'prod':
-        config = 'config.ProductionConfig'
-else:
-    config = 'config.DevelopmentConfig'
-
 app = Flask(__name__)
-app.config.from_object(config)
+app.config.from_object('config.ProductionConfig')
 
-# Set up database
+# Initialize database
 db = SQLAlchemy(app)
 
 # Set up JSON encoder

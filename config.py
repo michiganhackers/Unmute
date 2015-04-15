@@ -1,9 +1,9 @@
 class Config(object):
     DEBUG = False
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///dev.db'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://@localhost/unmute-db'
 
 class ProductionConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://@localhost/db'
+    pass
 
 class DevelopmentConfig(Config):
     DEBUG = True
