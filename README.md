@@ -13,3 +13,10 @@ We will implement:
 - An elegant user interface that connects stories with similar tag and color.
 - An API that will allow us to implement native clients should the interest
   arise.
+
+A Docker image is provided for quickly bootstrapping a working instance. It
+can be used as follows:
+
+    docker build -t *name* .
+    docker run *name*
+
