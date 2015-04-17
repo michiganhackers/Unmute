@@ -36,7 +36,7 @@ class Story(db.Model):
         # self.user_id = user_id
         self.title = title
         self.story_body = story_body
-        self.color = color
+        self.color = ColorEnum[color]
         self.latitude = latitude
         self.longitude = longitude
         self.post_date = arrow.utcnow()
