@@ -20,3 +20,8 @@ can be used as follows:
     docker build -t *name* .
     docker run *name*
 
+## Current Progress
+
+Our backend is completely implemented, however, our frontend will require a
+lot of additional steps. We will need to implement a UI for posting and
+user accounts.
